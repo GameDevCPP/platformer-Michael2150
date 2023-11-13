@@ -1,6 +1,6 @@
 #pragma once
 
-#include <SFML/Graphics/Text.hpp>
+#include "SFML/Graphics/Text.hpp"
 #include <ecm.h>
 
 class TextComponent : public Component {
