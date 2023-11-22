@@ -52,10 +52,6 @@ static double deg2rad(double degrees) {
   return degrees * 4.0 * atan(1.0) / 180.0;
 }
 
-static double degrees(double radians) {
-    return radians * 180.0 / (4.0 * atan(1.0));
-}
-
 template <typename T>
 Vector2<T> rotate(const Vector2<T>& v, const double degrees) {
   const double theta = deg2rad(degrees);
@@ -83,4 +79,8 @@ std::string toStrDecPt(const uint16_t& dp, const T& i) {
   std::stringstream stream;
   stream << std::fixed << std::setprecision(dp) << i;
   return stream.str();
+}
+
+static double degrees(double radians) {
+    return radians * 180.0 / (4.0 * atan(1.0));
 }

@@ -1,6 +1,10 @@
+//
+// Created by Denis Flynn on 21/11/2022.
+//
+//platformer.cpp
 #include "engine.h"
 #include "game.h"
-#include "scenes/scene_menu.h"
+//#include "scenes/scene_menu.h"
 
 using namespace std;
 
@@ -10,5 +14,5 @@ Level2Scene level2;
 Level3Scene level3;
 
 int main() {
-  Engine::Start(1280, 720, "Platformer",&menu);
+    Engine::Start(1280, 720, "Platformer",&menu);
 }

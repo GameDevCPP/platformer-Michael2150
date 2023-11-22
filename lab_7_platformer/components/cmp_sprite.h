@@ -18,7 +18,7 @@ public:
   sf::Sprite& getSprite() const;
 
 
-  void setTexture(std::shared_ptr<sf::Texture> tex);
+  void setTexure(std::shared_ptr<sf::Texture> tex);
 };
 
 class ShapeComponent : public Component {
